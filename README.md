@@ -36,10 +36,12 @@ In this part of the analysis, the focus is on the Vine Program, we will determin
 
 2. The total number of (Vine and non-Vine) 5-stars reviews is: 30414
 
-3. The total number and percentage of 5-star Vine reviews are: 1266 and 1,4%
+3. The percentage of 5-star Vine reviews is: 1,4%
 
-4. The total number and percentage of 5-star non-Vine reviews are: 62028 and 98,6%
+4. The percentage of 5-star non-Vine reviews is: 98,6%
 
 ## Summary 
 
-In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+Positivity bias is a tendency for people to judge reality more favorable than it really is. In this analysis, the positivity bias could be reflected in the tendency of reviewers to evaluate the toys with 5-stars.  If we look at the percentages, 5-star reviews approximately make the 50% of the total of reviews, while only 1,4% of the 5-star reviews belong to customers in the Vine program. This unbalanced shows how the Vine-program reviewers tend to be more critical in their evaluation of toys and consequently, there is not a strong bias towards 5-star reviews for the reviewers in the Vine Program.
+
+These insights could be further analyzed by calculating the percentages of the other star-levels reviews, especially the ones in the bottom (1-star or 2-star reviews). In addition, we could extend this analysis to another product reviews to see if there is a general conclusion of positivity bias in the Vine program.
