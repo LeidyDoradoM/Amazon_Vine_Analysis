@@ -6,24 +6,27 @@ This week module is all about Big data and the use of **Amazon Web Services (aws
 
 In this week project an analysis of the Toys customer reviews dataset from the [Amazon Review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) is carried out.  The information from the dataset is used to create an **AWS RDS database** containing 4 tables in `pgAdmin`.  
 
-The process is performed by using `PySpark`, that allows us to use `Python` to write Spark applications.  The reviews dataset is extracted into a DataFrame, transform it into four separate DataFrames that match the [table schema](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/challenge_schema.sql) in `pgAdmin` and Load them as tables into the database.  The code could be find in [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Amazon_Reviews_ETL.ipynb), and a glance of the four `pgAdmin` tables are shown below.
+The process is performed by using `PySpark`, that allows us to use `Python` to write Spark applications.  The reviews dataset is extracted into a DataFrame, transform it into four separate DataFrames that match the [table schema](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/challenge_schema.sql) in `pgAdmin` and load them as tables into the database.  The code could be find in [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Amazon_Reviews_ETL.ipynb), and images of the four tables in `pgAdmin` are shown below.
 
 ### The Customers Table:
 
 ![customer](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Customer_table.png)
-
+- This table shows how many reviews are made for each customer.  
 
 ### The Products Table:
 
 ![products](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Products_table.png)
+- Name and Identification Number of the products that have been reviewed.
 
 ### The Review Id Table:
 
 ![review](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Review_id_table.png)
+- Information about the reviews including identification numbers, who made each review, date, among other ones.
 
 ### The Vine Table:
 
 ![vine](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Vine_table.png)
+- Information about the Vine Program. 
 
 ## Determine Bias of Vine Review
 
