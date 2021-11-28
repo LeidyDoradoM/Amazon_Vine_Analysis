@@ -11,7 +11,7 @@ The process is performed by using `PySpark`, that allows us to use `Python` to w
 ### The Customers Table:
 
 ![customer](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Customer_table.png)
-- This table shows how many reviews are made for each customer.  
+- This table shows how many reviews were written by each customer.  
 
 ### The Products Table:
 
@@ -21,7 +21,7 @@ The process is performed by using `PySpark`, that allows us to use `Python` to w
 ### The Review Id Table:
 
 ![review](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Images/Review_id_table.png)
-- Information about the reviews including identification numbers, who made each review, date, among other ones.
+- Information about the reviews including identification numbers, who write each review, date, among other ones.
 
 ### The Vine Table:
 
@@ -30,11 +30,15 @@ The process is performed by using `PySpark`, that allows us to use `Python` to w
 
 ## Determine Bias of Vine Review
 
-Using your knowledge of PySpark, Pandas, or SQL, you’ll determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, you'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
+In this part of the analysis, the focus is on the Vine Program, we will determine if there is any bias towards reviews written as part of the Vine program. `Python` is used as the mean to determine additional findings that allows us to perform the analysis.  The code is shown [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Vine_Review_Analysis.ipynb) and the Vine Table as a `csv` file in [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/vine_table.csv).
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+1. The total number of (Vine and non-Vine) reviews is: 63294 
+
+2. The total number of (Vine and non-Vine) 5-stars reviews is: 30414
+
+3. The total number and percentage of 5-star Vine reviews are: 1266 and 1,4%
+
+4. The total number and percentage of 5-star non-Vine reviews are: 62028 and 98,6%
 
 ## Summary 
 
