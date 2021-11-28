@@ -6,7 +6,7 @@ This week module is all about Big data and the use of **Amazon Web Services (aws
 
 In this week project an analysis of the Toys customer reviews dataset from the [Amazon Review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) is carried out.  The information from the dataset is used to create an **AWS RDS database** containing 4 tables in `pgAdmin`.  
 
-The process is performed by using `PySpark`, that allows us to use `Python` to write Spark applications.  The reviews dataset is extracted into a DataFrame, transform it into four separate DataFrames that match the [table schema](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/challenge_schema.sql) in `pgAdmin` and load them as tables into the database.  The code could be find in [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Amazon_Reviews_ETL.ipynb), and images of the four tables in `pgAdmin` are shown below.
+The process is performed by using `PySpark`, that allows us to use `Python` to write Spark applications.  The reviews dataset is extracted into a DataFrame, is transformed into four separate DataFrames that match the [table schema](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/challenge_schema.sql) in `pgAdmin` and is loaded as tables into the database.  The code could be find [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Amazon_Reviews_ETL.ipynb), and images of the four tables in `pgAdmin` are shown below.
 
 ### The Customers Table:
 
@@ -30,7 +30,7 @@ The process is performed by using `PySpark`, that allows us to use `Python` to w
 
 ## Determine Bias of Vine Review
 
-In this part of the analysis, the focus is on the Vine Program, we will determine if there is any bias towards reviews written as part of the Vine program. `Python` is used as the mean to determine additional findings that allows us to perform the analysis.  The code is shown [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Vine_Review_Analysis.ipynb) and the Vine Table as a `csv` file in [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/vine_table.csv).
+In this part of the analysis, the focus is on the Vine Program, we will determine if there is any bias towards reviews written as part of the Vine program. `Python` is used as the mean to determine additional findings that allows us to perform the analysis.  The code is shown [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Vine_Review_Analysis.ipynb) and the Vine Table as a `csv` file [here](https://raw.githubusercontent.com/LeidyDoradoM/Amazon_Vine_Analysis/main/Resources/vine_table.csv).
 
 1. The total number of (Vine and non-Vine) reviews is: 63294 
 
@@ -42,6 +42,6 @@ In this part of the analysis, the focus is on the Vine Program, we will determin
 
 ## Summary 
 
-Positivity bias is a tendency for people to judge reality more favorable than it really is. In this analysis, the positivity bias could be reflected in the tendency of reviewers to evaluate the toys with 5-stars.  If we look at the percentages, 5-star reviews approximately make the 50% of the total of reviews, while only 1,4% of the 5-star reviews belong to customers in the Vine program. This unbalanced shows how the Vine-program reviewers tend to be more critical in their evaluation of toys and consequently, there is not a strong bias towards 5-star reviews for the reviewers in the Vine Program.
+Positivity bias is a tendency for people to judge reality more favorable than it really is. In this analysis, the positivity bias could be reflected in the tendency of reviewers to evaluate the toys with 5-stars.  If we look at the percentages, 5-star reviews approximately make the 50% of the total of reviews, while only 1,4% of the 5-star reviews belong to customers in the Vine program. This unbalance shows how the Vine-program reviewers tend to be more critical in their evaluation of toys and consequently, there is not a strong bias towards 5-star reviews for the reviewers in the Vine Program.
 
-These insights could be further analyzed by calculating the percentages of the other star-levels reviews, especially the ones in the bottom (1-star or 2-star reviews). In addition, we could extend this analysis to another product reviews to see if there is a general conclusion of positivity bias in the Vine program.
+These insights could be further analyzed by calculating the percentages of the other star-levels reviews, especially the ones in the bottom (1-star or 2-star reviews) to see if our initial conclusion about the critical evaluation of the Vine reviewers hold. In addition, we could extend this analysis to another product reviews to see if  we can get a general conclusion about the positivity bias in the Vine program.
